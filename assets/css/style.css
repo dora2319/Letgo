@@ -1,0 +1,89 @@
+@font-face {
+    font-family: fredokaone-regular;
+    src: url(../fonts/fredokaone-regular.ttf);
+}
+
+@font-face {
+    font-family: insanibc;
+    src: url(../fonts/insanibc.ttf);
+}
+
+* {
+    font-family: fredokaone-regular;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 74;
+    margin: 0 10;
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10%;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+.middle-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+}
+
+.search-input {
+    width: 100%;
+    height: 41px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    padding-left: 40;
+}
+
+.right-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 25%;
+}
+
+.sell-button {
+    margin-left: 6;
+    width: 85px;
+    height: 37px;
+    border: none;
+    border-radius: 58px;
+    background-color: #ff3f55;
+    color: white;
+}
+
+.buy-button {
+    margin-left: 9px;
+    margin-right: 10px;
+    width: 85px;
+    height: 37px;
+    border-style: solid;
+    border-color: #ff3b51;
+    border-radius: 58px;
+    background-color: white;
+    color: #ff3f55;
+}
+
+.menu-icon {
+    margin-left: 11px;
+    font-size: 17px;
+    color: grey;
+}
+
+v
