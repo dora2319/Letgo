@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
         "fredokaone"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingOvertype": "never",
+    "editor.codeActionsOnSave": {
+
+}
 }

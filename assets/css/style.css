@@ -1,89 +1,350 @@
-@font-face {
-    font-family: fredokaone-regular;
-    src: url(../fonts/fredokaone-regular.ttf);
-}
-
-@font-face {
-    font-family: insanibc;
-    src: url(../fonts/insanibc.ttf);
-}
-
-* {
-    font-family: fredokaone-regular;
-}
-
-body {
-    margin: 0;
-}
-
-header {
-    display: flex;
-    height: 74;
-    margin: 0 10;
-}
-
-.left-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 10%;
-}
-
-.logo {
-    width: 90px;
-    height: auto;
-    cursor: pointer;
-}
-
-.middle-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 65%;
-}
-
-.search-input {
-    width: 100%;
-    height: 41px;
-    background-color: #f5f5f5;
-    border: none;
-    border-radius: 8px;
-    padding-left: 40;
-}
-
-.right-header {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 25%;
-}
-
-.sell-button {
-    margin-left: 6;
-    width: 85px;
-    height: 37px;
-    border: none;
-    border-radius: 58px;
-    background-color: #ff3f55;
-    color: white;
-}
-
-.buy-button {
-    margin-left: 9px;
-    margin-right: 10px;
-    width: 85px;
-    height: 37px;
-    border-style: solid;
-    border-color: #ff3b51;
-    border-radius: 58px;
-    background-color: white;
-    color: #ff3f55;
-}
-
-.menu-icon {
-    margin-left: 11px;
-    font-size: 17px;
-    color: grey;
-}
-
-v
+    @font-face {
+        font-family: fredokaone-regular;
+        src: url(../fonts/fredokaone-regular.ttf);
+    }
+    
+    @font-face {
+        font-family: insanibc;
+        src: url(../fonts/insanibc.ttf);
+    }
+    
+    * {
+        font-family: fredokaone-regular;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    header {
+        display: flex;
+        height: 74;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 2px 6px 0px #00000036;
+        ;
+        background-color: white;
+        justify-content: center;
+    }
+    
+    .left-header {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    .logo {
+        width: 90px;
+        cursor: pointer;
+    }
+    
+    .middle-header {
+        display: flex;
+        align-items: center;
+        width: 672px;
+        position: relative;
+    }
+    
+    .search-input {
+        width: 664px;
+        height: 41px;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 8px;
+        padding-left: 40;
+    }
+    
+    .search-icon {
+        position: absolute;
+        left: 11px;
+        color: grey;
+    }
+    
+    .right-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .sell-button {
+        margin-left: 6;
+        width: 85px;
+        height: 37px;
+        border: none;
+        border-radius: 58px;
+        background-color: #ff3f55;
+        color: white;
+    }
+    
+    .login-button {
+        margin-left: 10;
+        margin-right: 24px;
+        padding-left: 52px;
+        padding-bottom: 15px;
+        width: 99px;
+        padding-top: 5px;
+        height: 15px;
+        border-style: solid;
+        border-color: #ff3b51;
+        border-radius: 58px;
+        background-color: white;
+        color: #ff3f55;
+        border-width: thin;
+    }
+    
+    .menu-icon {
+        margin-left: 11px;
+        font-size: 17px;
+        color: #7b7b7b;
+    }
+    
+    main {
+        position: relative;
+        z-index: -1;
+        height: 1400px;
+        width: 100%;
+        padding-top: 76px;
+    }
+    
+    .main-picture {
+        position: relative;
+    }
+    
+    .background-box {
+        display: flex;
+        background-color: #ff3f55;
+        height: 330px;
+        width: 1100px;
+        border-radius: 27px;
+        margin-top: 27px;
+        margin-left: 403px;
+        margin-bottom: 27px;
+    }
+    
+    .left-picture img {
+        height: 228px;
+        padding-left: 134px;
+        padding-top: 102px;
+    }
+    
+    .backgtext-left {
+        font-size: 21px;
+        left: 426px;
+        position: absolute;
+        top: 30;
+        color: white;
+    }
+    
+    .backgtext-left-next {
+        margin-left: 5px;
+        color: ff3f55;
+        padding-top: 9px;
+        padding-bottom: 2px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        background-color: white;
+        border-radius: 28px;
+        top: 47px;
+        left: 643px;
+        height: 25px;
+        width: 200px;
+    }
+    
+    .middle-picture img {
+        height: 70px;
+        padding-top: 133px;
+        padding-left: 33px;
+    }
+    
+    .right-picture img {
+        height: 218px;
+        padding-left: 78px;
+        padding-top: 112px;
+    }
+    
+    .backgtext-right {
+        position: absolute;
+        color: white;
+        left: 1006px;
+        font-size: 21;
+        top: 32px;
+    }
+    
+    .backgtext-right-next {
+        height: 23px;
+        width: 121px;
+        position: absolute;
+        background-color: white;
+        left: 1224px;
+        top: 31px;
+        border-radius: 16px;
+        padding-left: 20px;
+        padding-top: 8px;
+        padding-bottom: 5px;
+        color: #ff3f55;
+    }
+    
+    .categories {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icon-box {
+        margin: 7px;
+        margin-bottom: 70px;
+        display: inline-flex;
+        width: 129px;
+        height: 170px;
+        align-items: center;
+        border-radius: 28px;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .text-above-categoies {
+        font-size: 28;
+        margin-left: 502px;
+        color: #625454;
+    }
+    
+    .main-icon {
+        font-size: 25px;
+        color: #fbf8f8e0;
+    }
+    
+    .mobile-icon {
+        background-color: #6bcebb;
+    }
+    
+    .volleyball-icon {
+        background-color: #a3ce71;
+    }
+    
+    .car-icon {
+        background-color: #327fb6;
+    }
+    
+    .motorcycle-icon {
+        background-color: #fb8636;
+    }
+    
+    .couch-icon {
+        background-color: #ffd200;
+    }
+    
+    .patch-icon {
+        background-color: #fd7d91;
+    }
+    
+    .carriage-icon {
+        background-color: #20c3f3;
+    }
+    
+    .headphones-icon {
+        background-color: #ec7ebd;
+    }
+    
+    .categories-description {
+        position: absolute;
+        top: 179px;
+        font-size: 13px;
+        color: #afadad;
+        text-align: center;
+    }
+    
+    .popular-items-title {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        font-variant: all-petite-caps;
+        font-size: 35px;
+        color: #000000a6;
+        margin-left: 30px;
+    }
+    
+    .popular-items-title-icon {
+        padding-right: 15px;
+    }
+    
+    .popular-item {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .photo-label-laptop {
+        position: absolute;
+        top: 220px;
+        font-variant: all-petite-caps;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 500;
+        background: white;
+        padding: 5px 104px;
+        border-radius: 0px 0px 27px 27px;
+    }
+    
+    .photo-label-car {
+        position: absolute;
+        top: 220px;
+        font-variant: all-petite-caps;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 500;
+        background: white;
+        padding: 5px 119px;
+        border-radius: 0px 0px 27px 27px;
+    }
+    
+    .photo-label-mobilephone {
+        position: absolute;
+        top: 220px;
+        font-variant: all-petite-caps;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 500;
+        background: white;
+        padding: 5px 79px;
+        border-radius: 0px 0px 27px 27px;
+    }
+    
+    .photo-label-bicycle {
+        position: absolute;
+        top: 220px;
+        font-variant: all-petite-caps;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 500;
+        background: white;
+        padding: 5px 98px;
+        border-radius: 0px 0px 27px 27px;
+    }
+    
+    .popular-item-box {
+        background-color: #f5f5f5;
+        width: 270px;
+        height: 260px;
+        border-radius: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .popular-items {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 336px;
+    }
+    
+    footer {
+        background-color: blue;
+        height: 400px;
+        width: 100%;
+        display: flex;
+    }
