@@ -366,9 +366,7 @@ main {
     object-fit: cover;
     width: 263px;
     height: 250px;
-    border: none;
-    border-radius: 18px;
-    box-shadow: 0px 0px 1px 1px #c9c5c5;
+    border-radius: 0px 17px 0px 0px;
 }
 
 .heart-icon {
@@ -378,12 +376,95 @@ main {
     top: 11px;
     font-size: 20px;
     z-index: 80;
+    padding: 6px;
+    background: #ff3f55;
+    border-radius: 31px;
 }
 
 .showroom-items {
     position: relative;
-    z-index: -13;
     margin: 20px;
+    border: solid 1px #ff3f55;
+    border-radius: 17px;
+}
+
+.showroom-city {
+    font-variant-caps: all-petite-caps;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 16px;
+    color: #817c7c;
+}
+
+.showroom-modelbrand {
+    margin-top: -7px;
+    margin-left: 14px;
+    font-size: 24px;
+    font-variant-caps: all-petite-caps;
+}
+
+.showroom-category {
+    margin-top: -6px;
+    margin-left: 14px;
+    font-size: 22px;
+    font-variant-caps: all-petite-caps;
+    color: #817c7c;
+}
+
+.showroom-price {
+    margin-top: -9px;
+    margin-left: 14px;
+    font-size: 24px;
+    font-variant-caps: all-petite-caps;
+}
+
+.special-add {
+    background: #ff3f55;
+    width: 105px;
+    height: 25px;
+    text-align: center;
+    border-radius: 8px 0px 29px 0px;
+    color: white;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+
+.slide-circles {
+    justify-content: center;
+    position: absolute;
+    bottom: 106px;
+    left: 116px;
+    color: gray;
+    font-size: 4pt;
+}
+
+.circle1 {
+    padding: 4px;
+}
+
+.circle2 {
+    padding: 4px;
+}
+
+.circle3 {
+    padding: 4px;
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.load-more-style {
+    background: #ff3f55;
+    width: 133px;
+    height: 36px;
+    text-align: center;
+    border-radius: 27px;
+    color: white;
+    padding-top: 12px;
 }
 
 footer {
